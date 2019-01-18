@@ -21,19 +21,37 @@ subtypes
 
 ## Spring DI
 1. common
-	- @Value("value")
+  - @Value("value")
 2. Bean
-	- @Autowired
-	- @Qualifier
+  - @Autowired
+  - @Qualifier
 
-	- or @Resource(name="value")
+  - or @Resource(name="value")
 3. others
-	- lifecycle
-		- @PostConstruct
-		- @PreDestroy
-	- scope
-		- @Singleton
-		- @Prototype
-		- @Session
-		- @GlobalSession
-		- @Request
+  - lifecycle
+    - @PostConstruct
+    - @PreDestroy
+  - scope
+    - @Singleton
+    - @Prototype
+    - @Session
+    - @GlobalSession
+    - @Request
+
+## Spring Unit Test
+
+```java
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration("classpath*:application*.xml")
+public class DaoAnnotationTest {
+
+    @Resource(name="depDao")
+    IDepDao depDao;
+
+    @Test
+    public void listTest(){
+        System.out.println(depDao.getList());
+    }
+}
+```
+

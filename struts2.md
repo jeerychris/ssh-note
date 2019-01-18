@@ -80,6 +80,7 @@ public class ProductAction1 extends ActionSupport {
 > 
 **SET**:  ActionError、FieldError、ActionMessage
 **GET**: `<s:actionError>`
+
 ```java
 public class UserAction extends ActionSupport implements ModelDriven<User>{
 	// 接收数据:

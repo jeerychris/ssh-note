@@ -2,6 +2,7 @@
 
 ### Question & solution
 **Question: wanna enhance save method, add some check**
+
 ```java
 class UserDao{
     void save(){
@@ -57,3 +58,5 @@ class UserDaoBox implements IUserDao{
 ### AOP termination
 - **Joinpoint** 
 >
+
+```
