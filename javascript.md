@@ -384,7 +384,7 @@ person.fullName.apply(person1, ["Oslo", "Norway"]);
 person.fullName.call(person1, "Oslo", "Norway");
 ```
 
-#### Function closures
+#### Function ==closures==
 
 **Variable Lifetime**
 
